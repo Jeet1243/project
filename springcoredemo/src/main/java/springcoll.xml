@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xmlns:context="http://www.springframework.org/schema/context"
+    xmlns:p="http://www.springframework.org/schema/p"
+     xsi:schemaLocation="http://www.springframework.org/schema/beans 
+     http://www.springframework.org/schema/beans/spring-beans.xsd
+        http://www.springframework.org/schema/context
+        http://www.springframework.org/schema/context/spring-context.xsd">
+        
+       <bean name = "Studentinfobean" class = "com.springcore.collections.Student">
+       		
+       		<property name="studentName" value = "Jeet"></property>
+       		
+       		<property name="Subjects">
+       			<list>
+       				<value>English</value>
+       				<value>Maths</value>
+       				<value>Science</value>
+       				<value>History</value>
+       				<null/>
+       			</list> 	
+       		</property>
+       		
+       		<property name="address">
+       			<set>
+       				<value>Ramnagar</value>
+       				<value>ShankarNagar</value>
+       				<value>Dharampeth</value>
+       				<value>Sitabuldi</value>
+       			</set> 	
+       		</property>
+       		
+       		<property name="subjectMarks">
+       			<map>
+       				<entry key ="Science" value="95"></entry>
+       				<entry key ="Maths" value="97"></entry>
+       				<entry key ="Hindi" value="99"></entry>	
+       			</map>
+       		</property>
+       		
+       	<property name="props">
+       			<props>
+       				<prop key = "key1">Value1</prop>
+       				<prop key = "key2">Value2</prop>
+       				<prop key = "key3">Value3</prop>		
+       			</props>
+       	</property>
+       		
+       	
+       </bean>
+        
+  </beans>
